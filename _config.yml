@@ -56,8 +56,8 @@ author:
 
 # Owner/author information
 owner:
-  name:           Foo Boo
-  avatar:         foo.png
+  name:           Aaditya Saraiya
+  avatar:         me.png
   #email:          
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:
@@ -87,14 +87,14 @@ links:
     url: /tags/
   - title: <i class="fa fa-archive"></i> Archive
     url: /archive/
-  - title: <i class="iconside iconm-wordpress"></i> Old Blog
-    url: https://foo.wordpress.com
+  - title: <i class="iconside iconm-wordpress"></i> ShadesInfinity
+    url: https://shadesinfinity.wordpress.com/
     external: true
   - title: <i class="iconside iconm-envelop"></i> Contact
     url: /contact/
-  - title: <i class="iconside iconm-twitter"></i> Twitter
-    url: https://twitter.com/abcd
-    external: true
+#  - title: <i class="iconside iconm-twitter"></i> Twitter
+#    url: https://twitter.com/abcd
+#    external: true
   - title: <i class="iconside iconm-feed2"></i> Feed
     url: /feed.xml
 
