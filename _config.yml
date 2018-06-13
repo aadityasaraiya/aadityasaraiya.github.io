@@ -50,8 +50,8 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 # About/contact
 author:
   name:              Aaditya Saraiya 
-  url:               https://twitter.com/abcd
-  avatar:         foo.png
+#  url:               https://twitter.com/abcd
+  avatar:            me.png
   #email:           
 
 # Owner/author information
