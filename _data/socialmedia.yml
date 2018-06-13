@@ -11,7 +11,12 @@
 - name: GitHub
   url: https://github.com/aadityasaraiya
   class: fa fa-github-square
-  title: Code repository
+  title: Github Profile 
+
+- name: LinkedIn
+  url: https://www.linkedin.com/in/aaditya-saraiya-211998108/
+  class: fa fa-linkedin-square
+  title: LinkedIn Profile 
 
 #name: Contact
 # url: "/contact/"
