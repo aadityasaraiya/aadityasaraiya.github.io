@@ -19,6 +19,8 @@ tags:
 ---
 
 
+| <i class="fa fa-envelope"></i> | Aaditya Saraiya <br> BITS Pilani Dubai Campus <br> Dubai International Academic City <br> Dubai, UAE, 345055   | 
+| - | :- |
 | <i class="fa fa-paper-plane">  | aadityasaraiya25@gmail.com | 
 | - | :- |
 
