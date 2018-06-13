@@ -62,17 +62,17 @@ owner:
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        abcd
-  facebook:       
+#  twitter:        abcd
+#  facebook:       
   github:         aadityasaraiya
-  stackexchange:  
+#  stackexchange:  
   linkedin:       https://www.linkedin.com/in/aaditya-saraiya-211998108/
-  flickr:
-  tumblr:  
-  google_plus:    
+#  flickr:
+#  tumblr:  
+#  google_plus:    
   # orcid and google scholar IDs are different than standard username.
-  orcid: 
-  gscholar: 
+#  orcid: 
+#  gscholar: 
 
 ## sidebar links:
 # For external links add external: true
@@ -95,8 +95,8 @@ links:
 #  - title: <i class="iconside iconm-twitter"></i> Twitter
 #    url: https://twitter.com/abcd
 #    external: true
-  - title: <i class="iconside iconm-feed2"></i> Feed
-    url: /feed.xml
+#  - title: <i class="iconside iconm-feed2"></i> Feed
+#    url: /feed.xml
 
 # Google Custom Search:
 #google_search: xyz123abc
@@ -106,12 +106,9 @@ links:
 #twitter_widget_id: xyz123abc
 
 # Add disqus username for Disqus comment board:
-disqus_shortname: 
+#disqus_shortname: 
 
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   xyz123abc
 
-#### For dummy website only - remove if you wish ####
-github_repo: https://github.com/dyndna/lanyon-plus
-version: 1.1.1
-## END ##
+
