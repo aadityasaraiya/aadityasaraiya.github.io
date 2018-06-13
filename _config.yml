@@ -7,9 +7,9 @@ relative_permalinks: false
 encoding: utf-8
 
 # Setup
-title:               My Website
+title:               Robotics Hub
 #tagline:             'foo's website
-description:         Foo's blog...
+description:         Aaditya's blog...
 url: https://lanyon-plus.sbamin.com
 baseurl: ""
 urlimg: https://lanyon-plus.sbamin.com/images/
@@ -49,7 +49,7 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 
 # About/contact
 author:
-  name:              Foo Boo
+  name:              Aaditya Saraiya 
   url:               https://twitter.com/abcd
   avatar:         foo.png
   #email:           
@@ -64,16 +64,15 @@ owner:
   # Social networking links used in footer. Update and remove as you like.
   twitter:        abcd
   facebook:       
-  github:         xyz123abc
+  github:         aadityasaraiya
   stackexchange:  
-  linkedin:       https://www.linkedin.com/in/foo
-  instagram:      
+  linkedin:       https://www.linkedin.com/in/aaditya-saraiya-211998108/
   flickr:
   tumblr:  
-  google_plus:    https://plus.google.com/+foo
+  google_plus:    
   # orcid and google scholar IDs are different than standard username.
-  orcid: xyz123abc
-  gscholar: xyz123abc
+  orcid: 
+  gscholar: 
 
 ## sidebar links:
 # For external links add external: true
@@ -107,7 +106,7 @@ links:
 #twitter_widget_id: xyz123abc
 
 # Add disqus username for Disqus comment board:
-disqus_shortname: foo
+disqus_shortname: 
 
 # Analytics and webmaster tools stuff goes here
 #google_analytics:   xyz123abc
