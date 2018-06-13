@@ -23,7 +23,7 @@ tags:
 | - | :- |
 | <i class="fa fa-car"></i>  | [Driving directions]({{ site.url }}/directions) | 
 | - | :- |
-| <i class="fa fa-paper-plane">  | foo@xyz | 
+| <i class="fa fa-paper-plane">  | aadityasaraiya25@gmail.com | 
 | - | :- |
 
 <!--
