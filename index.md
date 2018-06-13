@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: index.html
-title: Personal Homepage of Aaditya Saraiya
+title: R&B
 description: "Where Robotics meets Business"
 ---
 
