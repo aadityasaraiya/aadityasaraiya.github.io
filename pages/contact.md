@@ -4,7 +4,7 @@ permalink: /contact/
 title: Contact
 show_meta: false
 published: true
-description: "Contact example.com"
+description: "Contact aadityasaraiya.github.io"
 comments: false
 mathjax: false
 noindex: false
@@ -13,7 +13,7 @@ sitemap:
     changefreq: 'monthly'
     lastmod: 2016-02-13
 tags:
-  - "foo boo"
+  - "Aaditya Saraiya"
   - "driving directions"
   - address
 ---

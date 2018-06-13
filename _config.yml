@@ -7,12 +7,12 @@ relative_permalinks: false
 encoding: utf-8
 
 # Setup
-title:               Robotics Hub
-tagline:             Aaditya's website
+title:               Robot Hub
+tagline:             Where Robotics Meets Business 
 description:         Aaditya's blog 
 url: https://aadityasaraiya.github.io/
 baseurl: ""
-urlimg: https://laadityasaraiya.github.io/images/
+urlimg: https://aadityasaraiya.github.io/images/
 ## If you do not have custom domain, comment top three lines, uncomment three lines below and replace dyndna with your github userid and lanyon-plus with your project name. Also, rename CNAME file to CNAME.sample
 #url: https://dyndna.github.io/lanyon-plus
 #baseurl: "/lanyon-plus"
