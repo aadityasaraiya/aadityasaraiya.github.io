@@ -8,7 +8,7 @@ description: "Curriculum Vitae / Resume"
 tags:
   - cv
   - resume
-  - "foo boo"
+  - "Aaditya Saraiya"
 comments: false
 imagesummary: foo.png
 modified: "2016-02-13"
