@@ -6,7 +6,7 @@ show_meta: true
 # imagefeature path is relative to images/ directory.
 imagefeature: foo.png
 published: true
-description: "About example.com...."
+description: "Where Robotics Meets Business"
 category: views
 comments: false
 mathjax: false
@@ -17,7 +17,7 @@ sitemap:
     lastmod: 2016-02-13
 # tags will be used as html meta keywords.    
 tags:
-  - "foo boo"
+  - "Aaditya Saraiya"
   - "city tx"
 ---
 
