@@ -7,9 +7,9 @@ relative_permalinks: false
 encoding: utf-8
 
 # Setup
-title:               My Website
-#tagline:             'foo's website
-description:         Foo's blog...
+title:                Robotics & Business 
+tagline:             Where Robotics Meets Business
+description:         Aaditya's blog
 url:                 http://localhost:4000
 baseurl:  ""
 urlimg: http://localhost:4000/images/
@@ -45,21 +45,21 @@ exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "l
 
 # About/contact
 author:
-  name:              Foo Boo
-  url:               https://twitter.com/abcd
+  name:              Aaditya Saraiya 
+#  url:               https://twitter.com/abcd
   avatar:         foo.png
   #email:           
 
 # Owner/author information
 owner:
-  name:           Foo Boo
-  avatar:         foo.png
-  #email:          
+  name:           Aaditya Saraiya
+#  avatar:         foo.png
+  email:         aadityasaraiya25@gmail.com 
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        abcd
-  facebook:       
+#  twitter:        abcd
+#  facebook:       
   github:         xyz123abc
   stackexchange:  
   linkedin:       https://www.linkedin.com/in/foo
