@@ -22,13 +22,13 @@ hide_printmsg: false
 # show post summary or full post in RSS feed.
 summaryfeed: false
 ## for twitter summary card with squared image and page description or page excerpt:
-# imagesummary: foo.png
+imagesummary: foo.png
 ## for twitter card with large image:
 # imagefeature: "http://img.youtube.com/vi/VEIrQUXm_hY/0.jpg"
 ## for twitter video card: (active for this page)
-##videofeature: "https://www.youtube.com/embed/iG9CE55wbtY"
-##imagefeature: "http://img.youtube.com/vi/iG9CE55wbtY/0.jpg"
-##videocredit: tedtalks
+videofeature: "https://www.youtube.com/embed/iG9CE55wbtY"
+imagefeature: "http://img.youtube.com/vi/iG9CE55wbtY/0.jpg"
+videocredit: tedtalks
 ---
 
 Hi everyone! This is the first blog post in a series of posts where I will talk about my general experience regarding the Google Summer of Code 2018 program. 
@@ -91,7 +91,18 @@ Thank you guys for reading this blog post. Anyone interested in viewing the deta
 ## Meet the Mentors 
 
 
+### References
 
+Multiple[^1]<sup>,</sup>[^3] and with comments[^2]
 
+Want to see something else added? <a href="https://github.com/dyndna/lanyon-plus/issues/new">Open an issue.</a>
+
+[^1]: [lanyon theme](http://lanyon.getpoole.com)
+[^2]: 
+    [lanyon-plus theme](https://github.com/dyndna/lanyon-plus "accessed on {{ page.date | date: '%B %d, %Y' }}")
+
+    >Excerpt: Sample post showing enabled features for post: `inline code`, `text highlight`{:.yelhglt}, code block with syntax highlights, embed gist, stylized blockquotes, video and image cards for twitter, markdown tables, inline and code bocks having mathjax support, references, print format, disqus comments, related posts, tags.
 
 [^3]: [About]({{ site.url }}/about)
+
+
