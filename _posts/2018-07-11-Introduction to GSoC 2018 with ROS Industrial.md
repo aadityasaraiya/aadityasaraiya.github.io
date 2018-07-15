@@ -73,7 +73,7 @@ Keeping the limitations of static models in mind, the focus of this GSoC 2018 pr
 
 1. We need a model of the robot as well as it's work environment to simulate the workflow. For this project, a UR5 robot manipulator and Kinect V1 sensor are utilized. Gazebo is used as the default physics simulator, while the visualisation of sensor data is done using RViz. The default view of the robot in Gazebo and RViz can be seen in the figure below. The visualization of the ball in RViz seems to be made of tiny cubes. This probabilistic representation of the surface is called an [Octomap](https://octomap.github.io/). 
 
-![(left)(Robot model in Gazebo (right) MoveIt! enabled manipulator visualized in RViz](https://drive.google.com/open?id=1ZUSKa1DH3bVaL7KN7zX0EL7unUTeFWd3)
+![(left)(Robot model in Gazebo (right) MoveIt! enabled manipulator visualized in RViz](https://github.com/aadityasaraiya/aadityasaraiya.github.io/blob/master/post_pictures/16th%20July%2C%202018/Gazebo_RViz_init.png)
 
 2. We need a dynamic 3-D reconstruction pipeline which takes in point-clouds from different camera views and fuses it into a single 3-D model. The algorithm also needs to track the estimate of the camera pose. For this process, I have utilized the [yak (Yet another Kinect Fusion) package](https://github.com/AustinDeric/yak) which is basically a ROS wrapper around an algorithm called **Kinect Fusion** which is an RGB-D based 3-D reconstruction pipeline. Kinect fusion uses the **Truncated Signed Difference function (TSDF)** for fusing multiple views into a single model.  
 
