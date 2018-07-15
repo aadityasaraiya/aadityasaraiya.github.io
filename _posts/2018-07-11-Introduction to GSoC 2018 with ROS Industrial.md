@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction to GSoC 2018 with ROS Industrial"
-date: "2013-01-01"
+date: "2018-07-16"
 slug: "example_content"
 description: "This blog post introduces my Google Summer of Code 2018 project and talks about my experience as a first time GSoC-er"
 category: 
@@ -9,7 +9,8 @@ category:
   - featured
 # tags will also be used as html meta keywords.
 tags:
-  - Google Summer of Code
+  - examples
+  - common_tag
 show_meta: true
 comments: true
 mathjax: true
