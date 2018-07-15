@@ -34,6 +34,8 @@ videocredit: tedtalks
 
 Hi everyone! This is the first blog post in a series of posts where I will talk about my general experience regarding the Google Summer of Code 2018 program. 
 
+<!--more-->
+
 ## The What and How?
 
 Google Summer of Code is an annual program by Google where it invites mentoring organisations from all around the world to choose students to mentor and work for developing open source software. This provides students an opportunity to learn directly from these open source organisations. I think the [Google Summer of Code website]((https://summerofcode.withgoogle.com/), [How It Works page](https://summerofcode.withgoogle.com/how-it-works/) and the [About Page](https://summerofcode.withgoogle.com/about/) will get you started with understanding how Google Summer of Code works. So instead, I think sharing my first-hand experience will be much more helpful. 
@@ -92,17 +94,6 @@ Thank you guys for reading this blog post. Anyone interested in viewing the deta
 ## Meet the Mentors 
 
 
-### References
-
-Multiple[^1]<sup>,</sup>[^3] and with comments[^2]
-
-Want to see something else added? <a href="https://github.com/dyndna/lanyon-plus/issues/new">Open an issue.</a>
-
-[^1]: [lanyon theme](http://lanyon.getpoole.com)
-[^2]: 
-    [lanyon-plus theme](https://github.com/dyndna/lanyon-plus "accessed on {{ page.date | date: '%B %d, %Y' }}")
-
-    >Excerpt: Sample post showing enabled features for post: `inline code`, `text highlight`{:.yelhglt}, code block with syntax highlights, embed gist, stylized blockquotes, video and image cards for twitter, markdown tables, inline and code bocks having mathjax support, references, print format, disqus comments, related posts, tags.
 
 [^3]: [About]({{ site.url }}/about)
 
