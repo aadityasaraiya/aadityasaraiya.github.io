@@ -87,7 +87,7 @@ Keeping the limitations of static models in mind, the focus of this GSoC 2018 pr
 
 I have summarised the entire project workflow in the figure below.  
 
-![Summary of Project Workflow](https://drive.google.com/open?id=19VDrCxfMOGcLJ-p3zlOOc0QE4ZDLV9hf)
+![Summary of Project Workflow](/images/16_7_2018/workflow.png)
 
 Thank you guys for reading this blog post. Anyone interested in viewing the detailed initial proposal for this project, they can access it via  [this Google Drive Link](https://drive.google.com/file/d/1JeZgfYfiJNrtUgfcV9WYJWoDF1quoCYu/view?usp=sharing). A lot of ideas have changed after the initial proposal and they may not give you an exact idea of what is currently being done. However, the overall picture, the goals and the techniques utilized remain the same. 
 
