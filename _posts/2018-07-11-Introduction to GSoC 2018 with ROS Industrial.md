@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to GSoC 2018 with ROS Industrial"
 date: "2018-07-16"
-slug: "GSoC_2018_with_ROS_Industrial"
+slug: "GSoC_2018_ROS_Industrial"
 description: "This blog post introduces my Google Summer of Code 2018 project and talks about my experience as a first time GSoC-er"
 category: 
   - views
