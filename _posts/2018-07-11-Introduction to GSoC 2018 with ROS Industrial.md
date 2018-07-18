@@ -2,15 +2,14 @@
 layout: post
 title: "Introduction to GSoC 2018 with ROS Industrial"
 date: "2018-07-16"
-slug: "example_content"
+slug: "GSoC_2018_with_ROS_Industrial"
 description: "This blog post introduces my Google Summer of Code 2018 project and talks about my experience as a first time GSoC-er"
 category: 
   - views
   - featured
 # tags will also be used as html meta keywords.
 tags:
-  - examples
-  - common_tag
+  - GSoC 2018
 show_meta: true
 comments: true
 mathjax: true
@@ -48,7 +47,7 @@ Having been working in the field of robotics for almost 3 years during my underg
 
 In industrial settings, robotic manipulators are designed for specialized tasks like arc welding, blending and other miscellaneous industrial tasks. The manipulator, with its peripheral equipment like controllers, networking devices, PCs and other structures specific to the task are isolated from humans for safety reasons, generally in form of a closed enclosure. These isolated areas are termed as **robotic work cells**. An example workcell is shown in the figure below. 
 
-![An Example Robotic Workcell](https://drive.google.com/open?id=1cu3_ktKNSZBNnOShuPMZl_hqGGdD-_e-)
+![An Example Robotic Workcell](/images/16_7_2018/workcell.png)
 
 
 ## How does the robot know about its surroundings?
@@ -75,7 +74,7 @@ Keeping the limitations of static models in mind, the focus of this GSoC 2018 pr
 
 [[https://https://github.com/aadityasaraiya/aadityasaraiya.github.io/blob/master/post_pictures/16th%20July%2C%202018/Gazebo_RViz_init.png|alt=Gazebo_RViz_init]]
 
-![(left)(Robot model in Gazebo (right) MoveIt! enabled manipulator visualized in RViz](https://github.com/aadityasaraiya/aadityasaraiya.github.io/blob/master/post_pictures/16th%20July%2C%202018/Gazebo_RViz_init.png)
+![(left)(Robot model in Gazebo (right) MoveIt! enabled manipulator visualized in RViz](/images/16_7_2018/sim_init.png)
 
 
 
@@ -89,7 +88,7 @@ I have summarised the entire project workflow in the figure below.
 
 ![Summary of Project Workflow](/images/16_7_2018/workflow.png)
 
-Thank you guys for reading this blog post. Anyone interested in viewing the detailed initial proposal for this project, they can access it via  [this Google Drive Link](https://drive.google.com/file/d/1JeZgfYfiJNrtUgfcV9WYJWoDF1quoCYu/view?usp=sharing). A lot of ideas have changed after the initial proposal and they may not give you an exact idea of what is currently being done. However, the overall picture, the goals and the techniques utilized remain the same. 
+Thank you guys for reading this blog post. Anyone interested in viewing the detailed initial proposal for this project, they can access it via  [this Google Drive Link](https://drive.google.com/file/d/1JeZgfYfiJNrtUgfcV9WYJWoDF1quoCYu/view?usp=sharing). A lot of ideas have changed after the initial proposal and they may not give you an exact idea of what is currently being done. However, the overall picture, the goals and the techniques utilized remain cd he same. 
 
 **Note for newbies like me**: I may have introduced a lot of unheard terms such as Octomaps and the process of how 3-D reconstruction works may sound hazy. I can totally understand that as that was my condition when I started working on this project. In my future blog posts, I will try to throw some light on how basic concepts behind the Kinect fusion pipeline for 3-D reconstruction. Also, I will try my best to come up with basic tutorials on how to use MoveIt!, however, I strongly suggest the [ROS Industrial](https://ros-industrial.github.io/industrial_training/) and [MoveIt!](http://docs.ros.org/kinetic/api/moveit_tutorials/html/index.html) tutorials to get going with the process of setting up your own robot model with ROS. 
 
@@ -97,6 +96,7 @@ Thank you guys for reading this blog post. Anyone interested in viewing the deta
 
 ## Meet the Mentors 
 
+My primary mentor is [Levi Armstrong](https://github.com/Levi-Armstrong), who works at the Southwestern Research Institute, has been critical in guiding me throughout this project. I would also like to thank Alex Goins, who helped in the inital stage of development of the concept. Working with OSRF and interacting with the members of this vibrant open source community has been an amazing experience so far.   
 
 
 [^3]: [About]({{ site.url }}/about)
