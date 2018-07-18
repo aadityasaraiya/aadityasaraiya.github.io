@@ -72,8 +72,6 @@ Keeping the limitations of static models in mind, the focus of this GSoC 2018 pr
 
 1. We need a model of the robot as well as it's work environment to simulate the workflow. For this project, a UR5 robot manipulator and Kinect V1 sensor are utilized. Gazebo is used as the default physics simulator, while the visualisation of sensor data is done using RViz. The default view of the robot in Gazebo and RViz can be seen in the figure below. The visualization of the ball in RViz seems to be made of tiny cubes. This probabilistic representation of the surface is called an [Octomap](https://octomap.github.io/). 
 
-[[https://https://github.com/aadityasaraiya/aadityasaraiya.github.io/blob/master/post_pictures/16th%20July%2C%202018/Gazebo_RViz_init.png|alt=Gazebo_RViz_init]]
-
 ![(left)(Robot model in Gazebo (right) MoveIt! enabled manipulator visualized in RViz](/images/16_7_2018/sim_init.png)
 
 
