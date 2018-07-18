@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to GSoC 2018 with ROS Industrial"
 date: "2018-07-16"
-slug: "GSoC_2018_ROS_Industrial"
+slug: "GSoC_2018_with_ROS_Industrial"
 description: "This blog post introduces my Google Summer of Code 2018 project and talks about my experience as a first time GSoC-er"
 category: 
   - views
@@ -27,7 +27,7 @@ summaryfeed: false
 # imagefeature: "http://img.youtube.com/vi/VEIrQUXm_hY/0.jpg"
 ## for twitter video card: (active for this page)
 #videofeature: "https://www.youtube.com/embed/iG9CE55wbtY"
-#imagefeature: "http://img.youtube.com/vi/iG9CE55wbtY/0.jpg"
+imagefeature: GSoC.png
 #videocredit: tedtalks
 ---
 
