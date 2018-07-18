@@ -5,8 +5,6 @@ title: R&B
 description: "Where Robotics meets Business"
 ---
 
-## [lanyon-plus](https://github.com/dyndna/lanyon-plus)
-
 <!-- 
 {% if site.twitter_widget_id %}
 <div class="text-tweets">
