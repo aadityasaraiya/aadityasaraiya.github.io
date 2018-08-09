@@ -164,7 +164,6 @@ The beauty behind Kinect Fusion is that with GPU-driven computing (Nvidia CUDA c
 
 I hope this post is able to give a brief idea on the major features of Kinect Fusion and the technical aspects related to the algorithm. So, the next set of posts will cover the following aspects: 
 
-
 + Explain the YAK (yet another Kinect Fusion) package which includes details on ROS architecture for this package. [YAK is a package](https://github.com/AustinDeric/yak) published by Austin Deric on a GPU-driven ROS wrapper for implementing Kinect Fusion using TSDFs.  
 
 + Explain how the robot utilizes the data from the YAK package to choose the **next-best views**  and explore its environment. Certain examples from my simulations will be used to get a better visualization of the same.
