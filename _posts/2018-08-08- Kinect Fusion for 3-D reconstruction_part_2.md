@@ -74,23 +74,23 @@ ___
 
 1. **Depth map conversion**- The depth frame acquired from the Kinect has depth values which suggest how far different objects are from the Kinect sensor. However, all these points need to be transformed into the 3-D coordinate frame with respect to the world. This requires a certain transformation to be made. 
 
-+ Convert depth values to a 3-D point wrt the camera coordinate frame
+    + Convert depth values to a 3-D point wrt the camera coordinate frame
 
 
-v<sub>k</sub>= D<sub>k</sub>(u)K<sup>-1</sup> (Metric point measurement in sensor frame k)
+    v<sub>k</sub>= D<sub>k</sub>(u)K<sup>-1</sup> (Metric point measurement in sensor frame k)
 
-where D<sub>k</sub>(u)= [x,y,1]<sup>T</sup>
+    where D<sub>k</sub>(u)= [x,y,1]<sup>T</sup>
 
-**Note 1**- A bilateral filter is used before transforming to camera coordinate frame in order to reduce noise. 
+    **Note 1**- A bilateral filter is used before transforming to camera coordinate frame in order to reduce noise. 
 
-+ Transform from camera coordinate frame to the world coordinate frame.
+    + Transform from camera coordinate frame to the world coordinate frame.
 
-v<sub>w</sub>= T<sub>w,k</sub>v<sub>k</sub> 
+    v<sub>w</sub>= T<sub>w,k</sub>v<sub>k</sub> 
 
-where T<sub>w,k</sub> is a transformation which helps us to go from the 3-D point in *camera coordinate frame* to a 3-D point in the *world coordinate frame*. A collection of these 3-D points forms what we call a **point cloud**.
+    where T<sub>w,k</sub> is a transformation which helps us to go from the 3-D point in *camera coordinate frame* to a 3-D point in the *world coordinate frame*. A collection of these 3-D points forms what we call a **point cloud**.
 
 
-**Note 2**- The robot and the camera have their local coordinate frames. But for us to compare measurements, all values need to be transformed to a world coordinate frame. 
+    **Note 2**- The robot and the camera have their local coordinate frames. But for us to compare measurements, all values need to be transformed to a world coordinate frame. 
 
 ___
 
