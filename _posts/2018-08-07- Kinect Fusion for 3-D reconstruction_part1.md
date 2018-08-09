@@ -27,7 +27,7 @@ summaryfeed: false
 # imagefeature: "http://img.youtube.com/vi/VEIrQUXm_hY/0.jpg"
 ## for twitter video card: (active for this page)
 #videofeature: "https://www.youtube.com/embed/iG9CE55wbtY"
-imagefeature: Kinfu.jpeg
+imagefeature: Kinfu.png
 #videocredit: tedtalks
 ---
 
