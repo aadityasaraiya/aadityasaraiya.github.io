@@ -44,7 +44,7 @@ The previous part, **Kinect Fusion for 3-D reconstruction- Part 1** of this part
 
 So having developed a general conceptual understanding of 3-D reconstruction, let's shift the focus to Kinect Fusion in particular. The main focus of Kinect Fusion shifts to **both real-time tracking and mapping**
 
-It can be concisely worded out as follows: 
+It can be concisely listed out as follows: 
 
 
 1. Estimate the relative camera poses (XYZ positions) for different frames in a moving camera.
