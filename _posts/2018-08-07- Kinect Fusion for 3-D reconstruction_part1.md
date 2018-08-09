@@ -31,7 +31,7 @@ imagefeature: Kinfu.jpeg
 #videocredit: tedtalks
 ---
 
-Hello, world! This is the second blog post in a series of posts talking about my GSoC 2018 project. The focus of this post is on Kinect Fusion and the principles behind 3-D reconstruction. To the new readers, thanks a lot for reading my post. You can refer to my [first blog post](https://aadityasaraiya.github.io//blog/2018/07/16/GSoC_2018_with_ROS_Industrial/) in this series in order to understand the flow of things in a better manner. 
+Hello, world! This is the second blog post in a series of posts talking about my GSoC 2018 project. The focus of this post is on Kinect Fusion and the principles behind 3-D reconstruction. To the new readers, thanks for reading my post. You can refer to my [first blog post](https://aadityasaraiya.github.io//blog/2018/07/16/GSoC_2018_with_ROS_Industrial/) in this series in order to understand the flow of things in a better manner. 
 
 <!--more-->
 
