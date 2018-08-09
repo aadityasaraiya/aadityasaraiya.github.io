@@ -58,9 +58,9 @@ Hello, world! This is the second blog post in a series of posts talking about my
 
 So, that leads to a question. 
 
-~~~
-If images are two-dimensional in nature. How do we make the model 3-D? 
-~~~
+
+**If images are two-dimensional in nature. How do we make the model 3-D?** 
+
 
 The answer to that is that we need to rely on **multiple-views** to provide us information about the 3-D geometry. This varies in different cases: 
 
