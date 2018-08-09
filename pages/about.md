@@ -30,6 +30,10 @@ tags:
 </span>
 </div>
 
-Hi! I am Aaditya Saraiya and I am an upcoming roboticist. Welcome to my website and thanks for reading! 
+Hi! I am Aaditya Saraiya and I am an upcoming roboticist. I am currently a graduate student at the Robotics Institute, Carnegie Mellon University for a Masters degree in Robotics Systems Development. 
+
+I did my undergraduate studies from Birla Institute of Technology and Science (BITS), Pilani- Dubai Campus in Electrical and Electronics engineering. 
+
+Welcome to my website and thanks for reading! 
 
 *[volutpat]: Tooltip for abbreviation.
