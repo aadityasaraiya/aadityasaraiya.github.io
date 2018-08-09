@@ -68,6 +68,8 @@ The answer to that is that we need to rely on **multiple-views** to provide us i
 
 + In our case, we are using an RGB-D camera called [Kinect](https://www.jameco.com/jameco/workshop/howitworks/xboxkinect.html). In addition to the 2-D images, the Kinect sensor provides us a depth frame. A depth frame is an image in which the values of the pixels depend on how far the object is from the camera. Objects near the camera have a darker shade while objects far away have a lighter shade. The objects which are too near (~ 40 cm or lesser) or too far (600 cm and above) are given a pixel value of 0 or black. 
 
+The following image shows the an example depth frame from a generic Kinect sensor. 
+
 ![An Example Depth frame](/images/6_8_2018/depth_map.png)
 
 ## General steps involved in 3-D reconstruction

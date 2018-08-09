@@ -58,6 +58,8 @@ So, if we give deeper thought to the focus of Kinect Fusion, it seems that there
 
 + Using the depth frames with **estimated camera poses**, we build a **dense surface model** of the environment.
 
+The following image shows the depiction of the tracking problem. 
+
 ![Depiction of the tracking problem](/images/6_8_2018/depict_tracking.png)
 
 + Using this **dense surface model**, we estimate the **current camera poses** in a better way by aligning the incoming depth frames with the previously obtained dense surface model. 
@@ -68,11 +70,15 @@ With the aim of Kinect Fusion clear in our mind, let's move forward to discussin
 
 So here we are, finally. The following image describes the key aspects of Kinect Fusion in the form of a flowchart. 
 
+The following image shows the Kinect Fusion Flowchart.
+
 ![Kinect Fusion Flowchart](/images/6_8_2018/Kinfu_flow_chart.png)
 
 ___
 
-1. **Depth map conversion**- The depth frame acquired from the Kinect has depth values which suggest how far different objects are from the Kinect sensor. However, all these points need to be transformed into the 3-D coordinate frame with respect to the world. This requires a certain transformation to be made. 
+**Depth map conversion**- 
+
+The depth frame acquired from the Kinect has depth values which suggest how far different objects are from the Kinect sensor. However, all these points need to be transformed into the 3-D coordinate frame with respect to the world. This requires a certain transformation to be made. 
 
     + Convert depth values to a 3-D point wrt the camera coordinate frame
 
@@ -94,25 +100,37 @@ ___
 
 ___
 
-2. **Integrating volumes using TSDF Fusion**- There is one important point which I took a bit of time to understand during my initial work with multi-view geometry. **Point clouds** are not continuous **surfaces**. If you zoom into a point cloud, you will see that point clouds have holes/discontinuities. Our task in 3-D reconstruction is to combine/fuse these point clouds into one continuous entity. 
+**Integrating volumes using TSDF Fusion**- 
+
+There is one important point which I took a bit of time to understand during my initial work with multi-view geometry. **Point clouds** are not continuous **surfaces**. If you zoom into a point cloud, you will see that point clouds have holes/discontinuities. Our task in 3-D reconstruction is to combine/fuse these point clouds into one continuous entity. 
 
 For estimation of the surface geometry, we use something called the [Truncated Signed Distance function](https://en.wikipedia.org/wiki/Signed_distance_function)(TSDF). TSDF assigns certain values to the depth pixels compared to how far they are from the boundaries of the object. The TSDF function has a value of zero at the boundaries, have positive values for depth ranges outside the boundary and negative values for depth ranges inside the boundary.
 
 Hence, TSDF allows us to compute a continuous function whose values is zero at the surfaces and changes inside and outside the surface.
 
+The following image shows the TSDF value on the left and the object cross-section view in the environment in the right.
+
 ![(left): TSDF value, (right): Object cross-section view in the environment](/images/6_8_2018/tsdf.png)
 
 The TSDF value at each frame needs to be fused into a single TSDF value, which will be a representation of the surface the Kinect sees. Each TSDF value for different scenes is associated with a weight value(which depends on how reliable the point cloud is) and fused it into a single surface. 
+
+The following image shows the Formula for TSDF fusion. 
  
-![Formuala for TSDF fusion](/images/6_8_2018/sdf_fusion.png)
+![Formula for TSDF fusion](/images/6_8_2018/sdf_fusion.png)
 
 ___
 
-3. **Model rendering using raycasting**- So the TSDF fusion process helps in accumulating different TSDF volumes. Now comes the task of rendering the graphics. Instead of rendering continuous surfaces, the TSDF value is discretized (cube-like representation) into basic elements which are called as **voxels**. My project uses the [**Octomap**](https://octomap.github.io/), a probabilistic 3-D mapping package for the process of rendering these voxels. 
+**Model rendering using raycasting**- 
+
+So the TSDF fusion process helps in accumulating different TSDF volumes. Now comes the task of rendering the graphics. Instead of rendering continuous surfaces, the TSDF value is discretized (cube-like representation) into basic elements which are called as **voxels**. My project uses the [**Octomap**](https://octomap.github.io/), a probabilistic 3-D mapping package for the process of rendering these voxels. 
+
+The following image shows the TSDF representation in form of voxels. 
 
 ![Representation of TSDF in form of voxels](/images/6_8_2018/voxel_rep.png)
 
-The surface rendering is done by a process called [volume raycasting](https://en.wikipedia.org/wiki/Volume_ray_casting) which involves computation of 2-D images from 3-D data (so that they can be displayed on the screen). Ray-casting is a fundamental method in computer vision where geometric rays (these rays are virtual) are traced from the camera to the object in the ray-direction. However, in volume ray-casting, these rays are interpolated into the object as well.  
+The surface rendering is done by a process called [volume raycasting](https://en.wikipedia.org/wiki/Volume_ray_casting) which involves computation of 2-D images from 3-D data (so that they can be displayed on the screen). Ray-casting is a fundamental method in computer vision where geometric rays (these rays are virtual) are traced from the camera to the object in the ray-direction. However, in volume ray-casting, these rays are interpolated into the object as well. 
+
+The following image illustrates the process of ray-casting. 
 
 ![Process of ray-casting](/images/6_8_2018/ray_casting.png)
 
@@ -120,11 +138,15 @@ A dense mapping algorithm is utilized to integrate a lot of depth measurements w
 
 ____ 
 
-4. **Camera tracking using Iterative closest point approach (ICP)**- So as the camera moves and we are acquiring a partially completed surface model, our next task is to track how much the camera has moved. To do that, we use the partially completed surface model to our advantage. The steps to do that are as follows:
+**Camera tracking using Iterative closest point approach (ICP)**- 
+
+So as the camera moves and we are acquiring a partially completed surface model, our next task is to track how much the camera has moved. To do that, we use the partially completed surface model to our advantage. The steps to do that are as follows:
 
 + From the previous camera frames, we have received a partially completed surface model as well as a fused point cloud. 
 
-+ When the next camera frame is received, we align the point cloud of that camera frame to the previous surface model such that the objects(visual features) match. This alignment is done using successive rigid body transformations (rotation + translation) as shown in the figure below using an iterative algorith called Iterative closest point algorithm. This algorithm uses the squared distance between matched points as a metric to minimise (for optimisation).
++ When the next camera frame is received, we align the point cloud of that camera frame to the previous surface model such that the objects(visual features) match. This alignment is done using successive rigid body transformations (rotation + translation) as shown in the figure below using an iterative algorith called Iterative closest point algorithm. This algorithm uses the squared distance between matched points as a metric to minimise (for optimisation). 
+
+The following image shows the transformation required to align point clouds using ICP. 
 
 ![Transformation to align point clouds using ICP](/images/6_8_2018/icp.png)
 
