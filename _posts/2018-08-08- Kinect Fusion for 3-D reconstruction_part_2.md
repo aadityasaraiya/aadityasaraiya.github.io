@@ -47,7 +47,7 @@ So having developed a general conceptual understanding of 3-D reconstruction, le
 It can be concisely worded out as follows: 
 
 
-1. **Estimate the relative camera poses (XYZ position) for different frames in a moving camera.** 
+1. **Estimate the relative camera poses (XYZ positions) for different frames in a moving camera.** 
 
 2. **Estimate the geometry (3-D model) of the environment based on the camera frames.**  
 
