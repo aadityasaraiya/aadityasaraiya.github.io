@@ -46,13 +46,11 @@ So having developed a general conceptual understanding of 3-D reconstruction, le
 
 It can be concisely worded out as follows: 
 
-~~~
 
 1. **Estimate the relative camera poses (XYZ position) for different frames in a moving camera.** 
 
 2. **Estimate the geometry (3-D model) of the environment based on the camera frames.**  
 
-~~~
 
 ## Interleaved components?
 
@@ -60,7 +58,7 @@ So, if we give deeper thought to the focus of Kinect Fusion, it seems that there
 
 + Using the depth frames with **estimated camera poses**, we build a **dense surface model** of the environment.
 
-![Depiction of the tracking problem](/images/6_8_2018/depict_track.png)
+![Depiction of the tracking problem](/images/6_8_2018/depict_tracking.png)
 
 + Using this **dense surface model**, we estimate the **current camera poses** in a better way by aligning the incoming depth frames with the previously obtained dense surface model. 
 
