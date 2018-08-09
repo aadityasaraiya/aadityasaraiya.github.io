@@ -152,7 +152,7 @@ The following image shows the transformation required to align point clouds usin
 Having computed the rigid body transformation, we are able to track the movement of the camera. 
 ___
 
-## Summary and whats not possible? 
+## Summary and whats not possible
 
 The beauty behind Kinect Fusion is that with GPU-driven computing (Nvidia CUDA code), the algorithm can do both 3-D reconstruction and camera tracking in real-time. However, the algorithm does have a few limitations.
 
@@ -162,7 +162,7 @@ The beauty behind Kinect Fusion is that with GPU-driven computing (Nvidia CUDA c
 
 ## So, whats next?
 
-I hope this post is able to give a brief idea on the major features of Kinect Fusion and the technical aspects related to the algorithm. So in the next set of posts will cover the following aspects: 
+I hope this post is able to give a brief idea on the major features of Kinect Fusion and the technical aspects related to the algorithm. So, the next set of posts will cover the following aspects: 
 
 
 + Explain the YAK (yet another Kinect Fusion) package which includes details on ROS architecture for this package. [YAK is a package](https://github.com/AustinDeric/yak) published by Austin Deric on a GPU-driven ROS wrapper for implementing Kinect Fusion using TSDFs.  
