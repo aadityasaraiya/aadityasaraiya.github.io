@@ -98,7 +98,7 @@ This answer is a helpful aid in understanding the difference between the two.
 
 Kinect Fusion is one of the earliest algorithms which aims at optimizing both **camera tracking and the map building process**.
 
-**Note**- I decided to break the blog post into two parts as it would be inconvenient to read such a big blog post. However, both posts are in continuation to each other and talk about the same subject. 
+**Note**- I decided to break the blog post into two parts as it would be inconvenient to read such a big blog post. However, both posts are in continuation to each other and talk about the same subject. The next part of this post can be [accessed via this link](https://aadityasaraiya.github.io//blog/2018/08/08/Kinect_Fusion_for_3-D_reconstruction_Part_2/).  
 
 ## Resources 
 
