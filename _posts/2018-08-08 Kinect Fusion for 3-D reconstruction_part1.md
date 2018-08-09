@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kinect Fusion for 3-D reconstruction- Part 1"
-date: "2018-08-08"
+date: "2018-08-07"
 slug: "Kinect_Fusion_for_3-D_reconstruction_Part_1"
 description: "With this blog post, I want to focus on Kinect Fusion and the overall philosophy behind 3-D reconstruction explained in a simple fashion"
 category: 
