@@ -53,13 +53,13 @@ Some key **URDF tags** which can help you get started with understanding the URD
 
 |Sr no. | Tag name | Properties |
 |:----- |:-------- | :-----     |
-| 1     | link   | link name, mass,origin,inertia etc.|
-| 2     | visual| how the part looks (using .dae files) |
-| 3     | geometry| define primitive shapes such as cone, sphere, box |
+| 1     | link     | link name, mass,origin,inertia etc.|
+| 2     | visual   | how the part looks (using .dae files) |
+| 3     | geometry | define primitive shapes such as cone, sphere, box |
 | 4     | collision| how the part behaves on collision (using .stl files)|
-| 5     | inertial| defining mass, origins and moment of inertia for physics simulators          |
-| 6     | joint | joint type, parent and child link, joint limit, dynamics|
-| 7     | gazebo | gazebo sensor/ros control plugins, sensor behavior etc.|
+| 5     | inertial | defining mass, origins and moment of inertia for physics simulators|
+| 6     | joint    | joint type, parent and child link, joint limit, dynamics|
+| 7     | gazebo   | gazebo sensor/ros control plugins, sensor behavior etc.|
 
 ## RViz and ROS MoveIt! 
 
