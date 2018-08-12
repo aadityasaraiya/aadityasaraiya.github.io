@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "KinectFusion, NBV_planner and workcell exploration"
-date: "2018-08-08"
+date: "2018-08-10"
 slug: "KinectFusion_NBV_planner_and_workcell_exploration"
 description: "This blog post focuses on the ROS package structure for the KinectFusion (YAK), Next-best-view (nbv_planner) and the workcell exploration functionalities"
 category: 
