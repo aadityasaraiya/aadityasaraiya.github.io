@@ -138,7 +138,7 @@ Some of the important topics initialised include the `move_group` related topics
 
 ___
 
-**Note**- Using the `move_group` object, we can write C++/ Python code as well to give motion commands to the robotic manipulator.  
+**Note**- Using the `move_group` object, we can write C++/ Python code as well to give motion commands to the robotic manipulator in RViz.  
 ___
 
 The given image shows the default MoveIt! menu which can be used to give commands to the robot.
