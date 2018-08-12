@@ -67,11 +67,9 @@ Some key **URDF tags** which can help you get started with understanding the URD
 
 After having created the URDF of the robot model, you can visualise it in RViz using a [launch file like this](https://github.com/ros-industrial/workcell_explorer/blob/master/myworkcell_support/launch/workcell_ur5.launch).
 
-___
 **Note**- I have commented out the `robot_state_publisher` and the `joint_state_publisher` packages in this file as they are being called somewhere else. However, if you are using this file solely, go ahead and uncomment those lines. You can use [this link](https://answers.ros.org/question/275079/joint-state-publisher-and-robot-state-publisher/) to undestand the difference between both these packages.
 
 **tl;dr** - The `robot_state_publisher` uses the URDF to calculate the forward kinematics and publishes the `/tf` transforms. The `joint_state_publisher` publishes the `sensor_msgs/JointState` messages for the robot.  
-___
 
 [ROS MoveIt!](https://moveit.ros.org/) is a motion planning software which has a lot of inbuilt functionalities for manipulation, mobile manipulation, 3D perception etc. 
 
@@ -136,10 +134,9 @@ The following image shows the robot initialised in RViz with ROS MoveIt! enabled
 
 Some of the important topics initialised include the `move_group` related topics, `planning_scene`, `pickup` and `place` topics, `joint_trajectory_action` topics. 
 
-___
 
 **Note**- Using the `move_group` object, we can write C++/ Python code as well to give motion commands to the robotic manipulator in RViz.  
-___
+
 
 The given image shows the default MoveIt! menu which can be used to give commands to the robot.
 
