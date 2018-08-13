@@ -143,7 +143,7 @@ The meshing process fits polygons into the octomap explored and creates a 3-D ma
 
 ## Thats all folks
 
-Google Summer of Code and working with ROS Industrial has been a wonderful learning experience. There were definitely lot of challenges and a lot of scope of improvement. However, I am happy I took up this project as it forced me to understand ROS and robotics software in a more organised way. I hope you guys enjoyed reading this series of posts. Hopefully will update the 
+Google Summer of Code and working with ROS Industrial has been a wonderful learning experience. There were definitely lot of challenges and a lot of scope of improvement. However, I am happy I took up this project as it forced me to understand ROS and robotics software in a more organised way. Thanks a lot for reading and will see you soon with some fresh content. 
 
 
 [^3]: [About]({{ site.url }}/about)
