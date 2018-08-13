@@ -31,7 +31,7 @@ imagefeature: ros_logo.png
 #videocredit: tedtalks
 ---
 
-Hi everyone! So this is probably the last blog post on the Google Summer of Code series. This post focuses on the ROS package structure for the KinectFusion (YAK), Next-best-view (nbv_planner) and the workcell exploration functionalities which have bene used while understanding the process of workcell exploration. The previous blog post covers the inital aspects of how the ROS package structure was designed.
+Hi everyone! So this is probably the last blog post on the Google Summer of Code series. This post focuses on the ROS package structure for the KinectFusion (YAK), the Next-best-view (nbv_planner) and the workcell exploration functionalities which have been used while understanding the process of workcell exploration. The previous blog post covers the inital aspects of how the ROS package structure was designed.
 
 <!--more-->
 
@@ -49,7 +49,7 @@ After the robot has been launched in Gazebo and RViz with ROS MoveIt! enabled, t
 roslaunch yak launch_gazebo_robot.launch
 ~~~
 
-This particular launch file can be accessed via [this link](https://github.com/aadityasaraiya/yak_edit/blob/master/yak/launch/launch_gazebo_robot.launch). The parameters in the launch file can be directly tuned in order to check the performance of Kinect Fusion such as adjusting the `bilateral filter` used for noise reduction, `number of iterations for ICP` etc. 
+This particular launch file can be accessed via [this link](https://github.com/aadityasaraiya/yak_edit/blob/master/yak/launch/launch_gazebo_robot.launch). The parameters in the launch file can be directly tuned in order to check the performance of Kinect Fusion such as adjusting the `bilateral filter` used for noise reduction, `number of iterations` for ICP etc. 
 
 This launch file calls the [Kinect Fusion node](https://github.com/aadityasaraiya/yak_edit/blob/master/yak/src/kinfu_node.cpp), which internally creates the `KinFuServer` object. This object takes up the depth frame from the Kinect sensor data and the fixed frame (the centre of the volume which will be reconstructed) and applies the full Kinect Fusion process.  
 
@@ -61,9 +61,9 @@ The following image shows the volume box with the `volume_pose` tf frame. The TS
 
 ![TSDF volume box](/images/10_8_2018/tsdf_volume_box.png)
 
-The Kinect Fusion package does the tracking package. It uses Octomap in order to do the mapping process which I will discuss in the next title. 
+The Kinect Fusion package does the camera tracking and it uses Octomap in order to do the mapping process which I will discuss in the next title. 
 
-A detailed description of the functions as well as the order in which different things are executed can be found in [this wiki on the workcell_explorer repository](https://github.com/ros-industrial/workcell_explorer/wiki/Kinect-Fusion-node-summary). The theoretical development behind Kinect Fusion can be found via these links [part 1](https://aadityasaraiya.github.io//blog/2018/08/07/Kinect_Fusion_for_3-D_reconstruction_Part_1/) and [part 2](https://aadityasaraiya.github.io//blog/2018/08/08/Kinect_Fusion_for_3-D_reconstruction_Part_2/). 
+A detailed description of the functions as well as the order in which different things are executed can be found in [this wiki on the workcell_explorer repository](https://github.com/ros-industrial/workcell_explorer/wiki/Kinect-Fusion-node-summary). The theoretical discussion behind Kinect Fusion can be found via these links [part 1](https://aadityasaraiya.github.io//blog/2018/08/07/Kinect_Fusion_for_3-D_reconstruction_Part_1/) and [part 2](https://aadityasaraiya.github.io//blog/2018/08/08/Kinect_Fusion_for_3-D_reconstruction_Part_2/). 
 
 ## Next-Best View planner
 
@@ -75,16 +75,15 @@ roslaunch nbv_planner octomap_mapping.launch
 
 Ths launch file can be accessed via [this link](https://github.com/aadityasaraiya/yak_edit/blob/master/nbv_planner/launch/octomap_mapping.launch).The launch file does the following tasks:
 
-+ It launches the [octomap_server package](http://wiki.ros.org/octomap_server) which loads a 3-D Octomap and allows other nodes to access it build the octomap as multiple depth frames are collected. 
++ It launches the [octomap_server package](http://wiki.ros.org/octomap_server) which loads a 3-D Octomap and allows other nodes to access it and build the octomap as multiple depth frames are collected. 
 
 + It launches the `nbv_planner_node` which does the process of finding the next-best-views which will be explained in the next heading.
 
 + It also starts the `octomap_reset` node which resets the Octomap and removes any old Octomap data.
 
-The bounds of the Octomap are set up and then the node waits for the GetNBV service to be called by the explorer_controller node.  
+The bounds of the Octomap are set up and then the node waits for the `GetNBV` service to be called by the explorer_controller node.  
 
 ## Exploration controller node 
-
 
 
 **Step 5- Start the exploration process**
